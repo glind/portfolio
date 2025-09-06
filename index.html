@@ -5,28 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gregory Lind - Portfolio | Open Build</title>
   <meta name="description" content="Portfolio of Gregory Lind — software developer, author of Radical Therapy for Software Teams, and founder of Buildly and Open.Build. Projects, skills, resume, and contact info."/>
-  <link rel="icon" href="/assets/img/favicon.png"/>
-  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"/>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="assets/img/favicon.png"/>
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"/>
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta name="theme-color" content="#0658A1"/>
 
   <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: '#0658A1',        // Buildly blue
-            'primary-dark': '#06427A',
-            secondary: '#F9943B',      // Buildly orange
-            accent: '#10B981',
-            'accent-dark': '#047857'
-          }
-        }
-      }
-    };
-
     function toggleDarkMode() {
       document.documentElement.classList.toggle('dark');
       localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
@@ -56,7 +41,7 @@
         </a>
         <div class="hidden md:flex items-center space-x-8">
           <a href="https://www.open.build" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
-          <a href="/portfolio/index.html" class="text-primary dark:text-primary font-semibold">Portfolio</a>
+          <a href="#" class="text-primary dark:text-primary font-semibold">Portfolio</a>
           <button aria-label="Toggle dark mode" onclick="toggleDarkMode()" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
             <i class="fas fa-moon dark:hidden"></i>
             <i class="fas fa-sun hidden dark:inline"></i>
@@ -69,8 +54,8 @@
     </div>
     <div id="mobile-menu" class="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 hidden">
       <div class="px-6 py-4 space-y-2">
-        <a href="/index.html" class="block py-2 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
-        <a href="/portfolio.html" class="block py-2 text-primary dark:text-primary font-semibold">Portfolio</a>
+        <a href="https://www.open.build" class="block py-2 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
+        <a href="#" class="block py-2 text-primary dark:text-primary font-semibold">Portfolio</a>
         <button onclick="toggleDarkMode()" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
           <i class="fas fa-moon dark:hidden"></i>
           <i class="fas fa-sun hidden dark:inline"></i>
@@ -331,11 +316,5 @@
       </div>
     </div>
   </footer>
-
-  <style>
-    /* optional: hide horizontal scrollbar without disabling scroll */
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-  </style>
 </body>
 </html>

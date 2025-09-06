@@ -1,0 +1,16 @@
+{
+  "name": "gregory-lind-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Gregory Lind",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/custom.css --watch",
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/custom.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "keywords": ["portfolio", "gregory-lind", "tailwind"],
+  "author": "Gregory Lind",
+  "license": "MIT"
+}

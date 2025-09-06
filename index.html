@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gregory Lind - Portfolio | Open Build</title>
-  <meta name="description" content="Portfolio of Gregory Lind — software developer, author of Radical Therapy for Software Teams, and founder of Buildly and Open.Build. Projects, skills, resume, and contact info."/>
+  <title>Ringo Starr - Portfolio | Open Build</title>
+  <meta name="description" content="Portfolio of Ringo Starr — drummer, songwriter, and software developer. Projects, skills, resume, and contact info."/>
   <link rel="icon" href="assets/img/favicon.png"/>
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"/>
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta name="theme-color" content="#0658A1"/>
+
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .dark .dark\:bg-gray-900 { background-color: #111827; }
+  </style>
 
   <script>
     function toggleDarkMode() {
@@ -21,7 +27,6 @@
     ) {
       document.documentElement.classList.add('dark');
     }
-
     function toggleMobileMenu() {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     }
@@ -69,17 +74,21 @@
     <div class="container mx-auto px-6">
       <div class="grid md:grid-cols-[1fr,2fr] gap-8 items-center">
         <div class="flex justify-center md:justify-start">
-          <img src="assets/img/greg.jpg" alt="Gregory Lind" class="w-40 h-40 rounded-2xl object-cover shadow-lg ring-4 ring-secondary/20"/>
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Ringo_Starr_(square_crop).png"
+            onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/2/20/Transparent.gif';"
+            alt="Ringo Starr"
+            class="w-40 h-40 rounded-2xl object-cover shadow-lg ring-4 ring-blue-300/40"/>
         </div>
         <div>
-          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Gregory Lind</h1>
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Ringo Starr</h1>
           <p class="mt-3 text-lg text-gray-600 dark:text-gray-300">
-            Software developer • Author of <em>Radical Therapy for Software Teams</em> • Founder @ Buildly & Open.Build
+            Drummer • Songwriter • Software developer. Peace & love—and clean, tested code.
           </p>
           <ul class="mt-4 flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-300">
-            <li><a class="hover:text-primary transition-colors underline underline-offset-4" href="mailto:greg@open.build">greg@open.build</a></li>
-            <li><a class="hover:text-primary transition-colors underline underline-offset-4" href="https://github.com/glind" target="_blank" rel="noopener">github.com/glind</a></li>
-            <li><a class="hover:text-primary transition-colors underline underline-offset-4" href="https://www.linkedin.com/in/greglind" target="_blank" rel="noopener">linkedin.com/in/greglind</a></li>
+            <li><a class="hover:text-primary transition-colors underline underline-offset-4" href="mailto:ringo@open.build">ringo@open.build</a></li>
+            <li><a class="hover:text-primary transition-colors underline underline-offset-4" href="#" onclick="return false;">github.com/ringo-dev</a></li>
+            <li><a class="hover:text-primary transition-colors underline underline-offset-4" href="#" onclick="return false;">linkedin.com/in/ringo-starr</a></li>
           </ul>
         </div>
       </div>
@@ -101,100 +110,80 @@
         </div>
       </div>
 
-      <!-- track -->
       <div id="proj-track" class="relative">
         <div class="overflow-x-auto no-scrollbar scroll-smooth" id="proj-scroller" tabindex="0" aria-label="Project carousel">
           <div class="flex gap-6 w-max pr-4">
-            <!-- Card -->
+            <!-- Fun, themed cards -->
             <article class="min-w-[300px] max-w-[360px] bg-gray-50 dark:bg-gray-700 rounded-2xl shadow p-6 border border-gray-200 dark:border-gray-600">
               <header class="flex items-center justify-between mb-3">
-                <h3 class="text-lg font-semibold">open-build/babblebeaver</h3>
-                <span class="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">LLM Tools</span>
+                <h3 class="text-lg font-semibold">Yellow Subroutine</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700 border border-blue-200">Backend</span>
               </header>
               <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                Remote LLM API with modular tools for agent workflows & structured extraction.
+                A microservice toolkit for streaming events—runs deep, handles pressure, stays shipshape.
               </p>
-              <div class="text-xs text-gray-500 dark:text-gray-400 mb-4">TypeScript • Python</div>
-              <a class="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-dark"
-                 href="https://github.com/open-build/babblebeaver" target="_blank" rel="noopener">
+              <div class="text-xs text-gray-500 dark:text-gray-400 mb-4">Go • gRPC • Postgres</div>
+              <a class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700" href="#" onclick="return false;">
                 <i class="fab fa-github"></i> Repo
               </a>
             </article>
 
             <article class="min-w-[300px] max-w-[360px] bg-gray-50 dark:bg-gray-700 rounded-2xl shadow p-6 border border-gray-200 dark:border-gray-600">
               <header class="flex items-center justify-between mb-3">
-                <h3 class="text-lg font-semibold">k8s-dashboard</h3>
-                <span class="text-xs px-2 py-1 rounded-full bg-secondary/10 text-secondary border border-secondary/20">DevOps</span>
+                <h3 class="text-lg font-semibold">Octopus’s Docker</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-orange-100 text-orange-700 border border-orange-200">DevOps</span>
               </header>
               <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                Kubernetes dashboard with AI-assisted analysis for clusters and workloads.
+                Opinionated Docker/K8s stack with compose profiles for local-to-cloud parity.
               </p>
-              <div class="text-xs text-gray-500 dark:text-gray-400 mb-4">Go • TS • Helm</div>
-              <a class="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-dark"
-                 href="https://github.com/buildly-marketplace/k8s-dashboard" target="_blank" rel="noopener">
+              <div class="text-xs text-gray-500 dark:text-gray-400 mb-4">Docker • Helm • Terraform</div>
+              <a class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700" href="#" onclick="return false;">
                 <i class="fab fa-github"></i> Repo
               </a>
             </article>
 
             <article class="min-w-[300px] max-w-[360px] bg-gray-50 dark:bg-gray-700 rounded-2xl shadow p-6 border border-gray-200 dark:border-gray-600">
               <header class="flex items-center justify-between mb-3">
-                <h3 class="text-lg font-semibold">Buildly Labs</h3>
-                <span class="text-xs px-2 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">Product</span>
+                <h3 class="text-lg font-semibold">Ticket to Ride-Share</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-green-100 text-green-700 border border-green-200">Product</span>
               </header>
               <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                AI-driven product & release management for faster, supervised delivery.
+                Sample SaaS demonstrating event-sourced bookings and CQRS patterns.
               </p>
-              <div class="text-xs text-gray-500 dark:text-gray-400 mb-4">SaaS • PM • Roadmaps</div>
-              <a class="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-dark"
-                 href="https://labs.buildly.io" target="_blank" rel="noopener">
-                <i class="fas fa-external-link-alt"></i> Website
+              <div class="text-xs text-gray-500 dark:text-gray-400 mb-4">Node • TypeScript • Kafka</div>
+              <a class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700" href="#" onclick="return false;">
+                <i class="fas fa-external-link-alt"></i> Demo
               </a>
             </article>
 
             <article class="min-w-[300px] max-w-[360px] bg-gray-50 dark:bg-gray-700 rounded-2xl shadow p-6 border border-gray-200 dark:border-gray-600">
               <header class="flex items-center justify-between mb-3">
-                <h3 class="text-lg font-semibold">Buildly (Open Source)</h3>
-                <span class="text-xs px-2 py-1 rounded-full bg-secondary/10 text-secondary border border-secondary/20">Platform</span>
+                <h3 class="text-lg font-semibold">Helter Linter</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-purple-100 text-purple-700 border border-purple-200">DX</span>
               </header>
               <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                Component-driven dev tools and open-source building blocks for cloud-native apps.
+                Git hooks + lint/format presets to keep repos in time—no more off-beat builds.
               </p>
-              <div class="text-xs text-gray-500 dark:text-gray-400 mb-4">DX • Components</div>
-              <a class="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-dark"
-                 href="https://www.buildly.io" target="_blank" rel="noopener">
-                <i class="fas fa-external-link-alt"></i> Website
+              <div class="text-xs text-gray-500 dark:text-gray-400 mb-4">Pre-commit • ESLint • Black</div>
+              <a class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700" href="#" onclick="return false;">
+                <i class="fab fa-github"></i> Repo
               </a>
             </article>
 
             <article class="min-w-[300px] max-w-[360px] bg-gray-50 dark:bg-gray-700 rounded-2xl shadow p-6 border border-gray-200 dark:border-gray-600">
               <header class="flex items-center justify-between mb-3">
-                <h3 class="text-lg font-semibold">Radical Therapy (Book)</h3>
-                <span class="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">Writing</span>
+                <h3 class="text-lg font-semibold">Peace & Love API</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-teal-100 text-teal-700 border border-teal-200">API</span>
               </header>
               <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                Practices for healthier, faster software teams in the AI era.
+                A playful REST/GraphQL service returning inspirational snippets & tempo-synced quotes.
               </p>
-              <div class="text-xs text-gray-500 dark:text-gray-400 mb-4">Teams • Process</div>
-              <a class="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-dark"
-                 href="https://www.radicaltherapy.dev" target="_blank" rel="noopener">
-                <i class="fas fa-external-link-alt"></i> Website
+              <div class="text-xs text-gray-500 dark:text-gray-400 mb-4">Python • FastAPI • GraphQL</div>
+              <a class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700" href="#" onclick="return false;">
+                <i class="fab fa-github"></i> Repo
               </a>
             </article>
 
-            <article class="min-w-[300px] max-w-[360px] bg-gray-50 dark:bg-gray-700 rounded-2xl shadow p-6 border border-gray-200 dark:border-gray-600">
-              <header class="flex items-center justify-between mb-3">
-                <h3 class="text-lg font-semibold">Open.Build</h3>
-                <span class="text-xs px-2 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">Community</span>
-              </header>
-              <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                Training & mentorship for developers and founders; open-source first.
-              </p>
-              <div class="text-xs text-gray-500 dark:text-gray-400 mb-4">Mentorship • OSS</div>
-              <a class="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-dark"
-                 href="mailto:greg@open.build">
-                <i class="fas fa-envelope"></i> Contact
-              </a>
-            </article>
           </div>
         </div>
       </div>
@@ -204,10 +193,9 @@
           const scroller = document.getElementById('proj-scroller');
           const prev = document.getElementById('proj-prev');
           const next = document.getElementById('proj-next');
-          const step = 380; // px per click
+          const step = 380;
           prev.addEventListener('click', () => scroller.scrollBy({ left: -step, behavior: 'smooth' }));
           next.addEventListener('click', () => scroller.scrollBy({ left: step, behavior: 'smooth' }));
-          // keyboard support
           document.addEventListener('keydown', (e) => {
             if (document.activeElement === scroller || e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
               if (e.key === 'ArrowLeft') scroller.scrollBy({ left: -step, behavior: 'smooth' });
@@ -226,73 +214,79 @@
         <div>
           <h2 class="text-2xl font-bold mb-4">About Me</h2>
           <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
-            I’m Greg, a software developer, author, and entrepreneur with 20+ years building open-source and cloud-native systems.
-            I founded Buildly (developer tools & product management) and co-founded Open.Build (training & mentorship).
-            I co-authored <em>Radical Therapy for Software Teams</em> and speak on AI-assisted development, developer experience,
-            and sustainable product delivery.
+            I’m Ringo—yes, that Ringo. When I’m not behind a Ludwig kit, I’m behind a keyboard building
+            reliable, well-tested services. I love developer experience, steady tempos in CI/CD, and
+            shipping software that keeps the band (product, ops, users) in perfect time.
           </p>
           <ul class="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-6 space-y-1">
-            <li>Founder/CTO across multiple startups (US, EU)</li>
-            <li>Open source contributor and community mentor</li>
-            <li>AI + dev tools for faster, supervised delivery</li>
-            <li>Remote-first; hands-on leadership & coaching</li>
+            <li>Event-driven backends & API design</li>
+            <li>DevOps: containers, orchestration, release flow</li>
+            <li>DX tooling, docs, and mentoring</li>
+            <li>“Peace & love” code reviews—kind, clear, actionable</li>
           </ul>
-          <a href="assets/Gregory_Lind_Resume.pdf" target="_blank" class="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-dark transition-colors inline-block">
+          <a href="#" onclick="return false;" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 inline-flex items-center">
             <i class="fas fa-file-alt mr-2"></i>Download Resume
           </a>
+
+          <!-- Photo credit strip -->
+          <p class="mt-4 text-xs text-gray-500">
+            Headshot from Wikimedia Commons (DearMoon interview crop).
+          </p>
         </div>
 
-        <!-- Contact (wired to email you) -->
+        <!-- Contact -->
         <div>
           <h2 class="text-2xl font-bold mb-4">Contact</h2>
           <div class="mb-4 space-y-2">
             <div class="flex items-center text-lg text-gray-600 dark:text-gray-300">
-              <i class="fas fa-envelope mr-2 text-primary"></i>
-              <a class="hover:text-primary underline underline-offset-4" href="mailto:greg@open.build">greg@open.build</a>
+              <i class="fas fa-envelope mr-2 text-blue-600"></i>
+              <a class="hover:text-blue-600 underline underline-offset-4" href="mailto:ringo@open.build">ringo@open.build</a>
             </div>
             <div class="flex items-center space-x-4">
-              <a href="https://github.com/glind" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors text-lg flex items-center">
+              <a href="#" onclick="return false;" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 transition-colors text-lg flex items-center">
                 <i class="fab fa-github mr-2"></i> GitHub
               </a>
-              <a href="https://www.linkedin.com/in/greglind" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors text-lg flex items-center">
+              <a href="#" onclick="return false;" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 transition-colors text-lg flex items-center">
                 <i class="fab fa-linkedin mr-2"></i> LinkedIn
               </a>
             </div>
           </div>
 
-          <!-- Wired contact form via FormSubmit (no backend needed) -->
-          <form action="https://formsubmit.co/greg@open.build" method="POST"
+          <!-- Simple email form (placeholder endpoint; replace if you want it to send) -->
+          <form action="#" method="POST"
                 class="mt-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-200 dark:border-gray-700">
-            <!-- FormSubmit options -->
-            <input type="hidden" name="_subject" value="New message from your portfolio site">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_autoresponse" value="Thanks for reaching out—Greg here. I received your message and will get back to you soon.">
-            <input type="hidden" name="_next" value="https://open.build/thanks.html">
-            <input type="text" name="_honey" class="hidden" style="display:none">
-
             <h3 class="text-lg font-semibold mb-4">Send a Message</h3>
             <div class="mb-4">
               <label class="sr-only" for="name">Your Name</label>
               <input id="name" name="name" type="text" placeholder="Your Name" required
-                     class="w-full px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"/>
+                     class="w-full px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 ring-offset-0 focus:ring-blue-600"/>
             </div>
             <div class="mb-4">
               <label class="sr-only" for="email">Your Email</label>
               <input id="email" name="email" type="email" placeholder="Your Email" required
-                     class="w-full px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"/>
+                     class="w-full px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 ring-offset-0 focus:ring-blue-600"/>
             </div>
             <div class="mb-4">
               <label class="sr-only" for="message">Your Message</label>
               <textarea id="message" name="message" placeholder="Your Message" rows="4" required
-                        class="w-full px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        class="w-full px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 ring-offset-0 focus:ring-blue-600"></textarea>
             </div>
-            <button type="submit" class="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
+            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700">
               Send Message
             </button>
             <p class="mt-3 text-xs text-gray-500 dark:text-gray-400">
-              This form emails <strong>greg@open.build</strong> securely via FormSubmit. You’ll see a brief confirmation screen after sending.
+              Want this to email <b>ringo@open.build</b>? I can wire it to FormSubmit or a serverless function on request.
             </p>
           </form>
+
+          <!-- Extra image (freely-licensed) -->
+          <figure class="mt-6">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Ringo_Starr_(2007).jpg"
+              alt="Ringo Starr in 2007 (Wikimedia Commons)"
+              class="rounded-xl shadow-md object-cover w-full max-w-sm"/>
+            <figcaption class="text-xs text-gray-500 mt-2">Photo: Wikimedia Commons user upload, 2007.</figcaption>
+          </figure>
         </div>
       </div>
     </div>
@@ -307,8 +301,8 @@
           <span class="text-xl font-bold">Open Build</span>
         </div>
         <div class="flex space-x-4">
-          <a href="https://github.com/glind" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/greglind" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
+          <a href="#" onclick="return false;" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github"></i></a>
+          <a href="#" onclick="return false;" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
       <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Rodriguez - Portfolio | Open Build</title>
+    <meta name="description" content="Portfolio of Alex Rodriguez, Full-Stack Developer. GitHub stats, featured projects, skills, resume, and contact info.">
+    <link rel="icon" href="/assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#3B82F6">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        'primary-dark': '#1D4ED8',
+                        secondary: '#8B5CF6',
+                        accent: '#10B981',
+                        'accent-dark': '#047857'
+                    }
+                }
+            },
+            darkMode: 'class'
+        };
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+        }
+        if (localStorage.getItem('darkMode') === 'true' || 
+           (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-lg fixed w-full z-50 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center py-4">
+                <a href="/index.html" class="flex items-center">
+                    <img src="/assets/img/OPEN-BUILD-LOGO.png" alt="Open Build Logo" class="h-10 w-auto mr-3">
+                    <div class="text-sm text-gray-600 dark:text-gray-300 leading-tight">
+                        <div>AI Software Development</div>
+                        <div>Training & Mentorship</div>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html" class="text-gray-600 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
+                    <a href="/portfolio.html" class="text-primary dark:text-primary font-semibold">Portfolios</a>
+                    <button onclick="toggleDarkMode()" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:inline"></i>
+                    </button>
+                </div>
+                <button class="md:hidden p-2" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 hidden">
+            <div class="px-6 py-4 space-y-2">
+                <a href="/index.html" class="block py-2 text-gray-600 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
+                <a href="/portfolio.html" class="block py-2 text-primary dark:text-primary font-semibold">Portfolios</a>
+                <button onclick="toggleDarkMode()" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:inline"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero -->
+    <div class="container">
+        <h1>Gregory Lind</h1>
+        <p>Welcome to my portfolio page.</p>
+        <ul>
+            <li><a href="https://github.com/glind" target="_blank">GitHub: glind</a></li>
+            <li><a href="https://www.linkedin.com/in/greglind" target="_blank">LinkedIn: greglind</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+    <!-- GitHub Stats & Achievements -->
+    <section class="py-12 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- GitHub Stats -->
+                <div class="bg-gray-50 dark:bg-gray-700 rounded-2xl shadow-lg p-8 border border-gray-200 dark:border-gray-600">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+                        <i class="fab fa-github text-primary mr-3"></i>GitHub Stats
+                    </h2>
+                    <div class="grid grid-cols-3 gap-6 text-center mb-6">
+                        <div>
+                            <div class="text-3xl font-bold text-primary">127</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300">Commits</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-secondary">15</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300">Repos</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-accent">8</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300">PRs</div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-2">Achievements</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs font-semibold border border-primary/20">
+                                🏆 Open Build Graduate
+                            </span>
+                            <span class="bg-accent/10 text-accent px-2 py-1 rounded-full text-xs font-semibold border border-accent/20">
+                                🌟 First Contribution
+                            </span>
+                            <span class="bg-secondary/10 text-secondary px-2 py-1 rounded-full text-xs font-semibold border border-secondary/20">
+                                🚀 Active Contributor
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Featured Repository -->
+                <div class="bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-800 dark:to-blue-900/20 rounded-2xl shadow-lg p-8 border border-gray-200 dark:border-gray-600">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+                        <i class="fas fa-star text-accent mr-3"></i>Featured Project
+                    </h2>
+                    <div class="mb-4">
+                        <div class="font-medium text-lg text-gray-900 dark:text-white">alex-codes/weather-app</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-300 mb-2">Modern weather app with React and OpenWeather API</div>
+                        <div class="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400">
+                            <span class="flex items-center"><span class="w-2 h-2 bg-yellow-400 rounded-full mr-1"></span>JavaScript</span>
+                            <span class="flex items-center"><i class="fas fa-star mr-1"></i>23</span>
+                            <span class="flex items-center"><i class="fas fa-code-branch mr-1"></i>5</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/alex-codes/weather-app" target="_blank" class="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-dark transition-colors inline-block">
+                        <i class="fab fa-github mr-2"></i>View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Resume -->
+    <section class="py-12 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                        Hi! I'm Alex, a passionate full-stack developer specializing in React, Node.js, and modern web technologies. I love building scalable apps, contributing to open source, and mentoring new developers.
+                    </p>
+                    <ul class="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-6">
+                        <li>5+ years experience in web development</li>
+                        <li>Open Build Graduate & Mentor</li>
+                        <li>Speaker at JSConf 2024</li>
+                        <li>Remote & freelance friendly</li>
+                    </ul>
+                    <a href="/assets/resume-alex-rodriguez.pdf" target="_blank" class="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-dark transition-colors inline-block">
+                        <i class="fas fa-file-alt mr-2"></i>Download Resume
+                    </a>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Contact</h2>
+                    <div class="mb-4 space-y-2">
+                        <div class="flex items-center text-lg text-gray-600 dark:text-gray-300">
+                            <i class="fas fa-envelope mr-2 text-primary"></i>
+                            <span>alex@open.build</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <a href="https://github.com/alex-codes" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors text-lg">
+                                <i class="fab fa-github mr-1"></i> GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/alex-codes" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors text-lg">
+                                <i class="fab fa-linkedin mr-1"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                    <form class="mt-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-200 dark:border-gray-700">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Send a Message</h3>
+                        <div class="mb-4">
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-4">
+                            <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-900 text-white py-12 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="/assets/img/OPEN-BUILD-LOGO.png" alt="Open Build Logo" class="h-8 w-auto mr-3">
+                    <span class="text-xl font-bold">Open Build</span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2025 Open Build. All rights reserved. | Built with ❤️ for the developer community</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
